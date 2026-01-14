@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Luxury-3D-Login-Signup/static/css/main.be0b2a13.css",
+    "main.js": "/Luxury-3D-Login-Signup/static/js/main.63a11dc9.js",
+    "static/js/453.d135897f.chunk.js": "/Luxury-3D-Login-Signup/static/js/453.d135897f.chunk.js",
+    "index.html": "/Luxury-3D-Login-Signup/index.html",
+    "main.be0b2a13.css.map": "/Luxury-3D-Login-Signup/static/css/main.be0b2a13.css.map",
+    "main.63a11dc9.js.map": "/Luxury-3D-Login-Signup/static/js/main.63a11dc9.js.map",
+    "453.d135897f.chunk.js.map": "/Luxury-3D-Login-Signup/static/js/453.d135897f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be0b2a13.css",
+    "static/js/main.63a11dc9.js"
+  ]
+}

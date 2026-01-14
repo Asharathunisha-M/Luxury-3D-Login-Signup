@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400&display=swap');
+
+:root {
+  --coffee: #241a16;
+  --sandal: #d7c0ae;
+  --obsidian: #0a0a0a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.app-viewport {
+  height: 100vh;
+  width: 100%;
+  background: var(--obsidian);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  perspective: 2000px;
+}
+
+/* Layered Parallax Backgrounds */
+.parallax-layer {
+  position: absolute;
+  top: -10%; left: -10%;
+  width: 120%; height: 120%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Deep background layer (Texture/Cloud) */
+.layer-deep {
+  background-image: url('https://i.pinimg.com/originals/80/e9/4c/80e94c24da7920ecee707f30c8d10f9f.jpg');
+  filter: brightness(0.25) sepia(0.3);
+  z-index: 1;
+}
+
+/* Mid layer (Aesthetic abstract shapes) */
+.layer-mid {
+  background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL3Jhd3BpeGVsX29mZmljZV8zNF9hZXN0aGV0aWNfYmFja2dyb3VuZF9vZl9sYW5kc2NhcGVfbW91bnRhaW5fdF9mY2Q2ODA0Mi0zMGY0LTRjMmQtYmRiYS1lNjZmM2Y1OWY3MzhfMi5qcGc.jpg');
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  z-index: 2;
+}
+
+/* Floating Card Container */
+.auth-wrapper {
+  width: 420px;
+  height: 580px;
+  position: relative;
+  z-index: 100;
+  transform-style: preserve-3d;
+  animation: floatAnim 6s infinite ease-in-out;
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0) rotateX(0); }
+  50% { transform: translateY(-25px); }
+}
+
+.card-inner {
+  width: 100%; height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.is-flipped .card-inner { transform: rotateY(180deg); }
+
+.card-face {
+  position: absolute;
+  width: 100%; height: 100%;
+  backface-visibility: hidden;
+  background: rgba(36, 26, 22, 0.85); /* Deep Brown Glassmorphism */
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(215, 192, 174, 0.2);
+  border-radius: 30px;
+  padding: 50px 40px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.7);
+}
+
+.face-back { transform: rotateY(180deg); }
+
+.brand-header {
+  font-family: 'Cinzel', serif;
+  color: var(--sandal);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+/* Form Elements */
+.luxury-form input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: none;
+  border-bottom: 1px solid var(--sandal);
+  padding: 12px 0;
+  color: #fff;
+  margin-bottom: 30px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gold-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--sandal);
+  color: var(--coffee);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.gold-btn:hover { background: #fff; transform: scale(1.02); }
+
+.toggle-msg { color: #888; text-align: center; margin-top: 40px; font-size: 0.85rem; }
+.toggle-msg span { color: var(--sandal); cursor: pointer; text-decoration: underline; }

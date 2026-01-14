@@ -1,21 +1,3 @@
-Luxury-3D-Login-Signup
-
-📁 Project Folder Structure
-Luxury-3D-Login-Signup/
-│
-├── public/
-│   └── index.html
-│
-├── src/
-│   ├── App.js
-│   ├── App.css
-│   ├── index.js
-│
-├── .gitignore
-├── package.json
-└── README.md
-
-📝 README.md (Copy–Paste Ready)
 # ✨ Luxury 3D Login & Signup Page (React)
 
 A **premium animated Login & Signup UI** built with **React.js** featuring:
@@ -48,17 +30,11 @@ This project is ideal for **frontend portfolios**, **UI/UX demonstrations**, and
 
 ---
 
-## 📸 Preview
-
-> Add screenshots or a screen-recording GIF here
-
----
-
 ## 📂 Project Setup
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/Luxury-3D-Login-Signup.git
+https://github.com/Asharathunisha-M/Luxury-3D-Login-Signup.git
 
 2️⃣ Install Dependencies
 npm install
@@ -94,7 +70,7 @@ git init
 git add .
 git commit -m "Initial commit - Luxury 3D Login Signup UI"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/Luxury-3D-Login-Signup.git
+git remote add origin https://github.com/Asharathunisha-M/Luxury-3D-Login-Signup.git
 git push -u origin main
 
 💡 Optional Enhancements (Future Commits)
@@ -107,4 +83,4 @@ Backend authentication (Spring Boot / Firebase)
 
 Mobile responsiveness
 
-Deploy on GitHub Pages / Netlify
+Deploy on GitHub Pages / Netlify / Vercel
